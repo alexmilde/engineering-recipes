@@ -1,0 +1,10 @@
+type Query {
+  customers(email: String): [customer!]
+  hello: String
+}
+
+type customer {
+  email: String
+  firstName: String
+  id: Int
+}
