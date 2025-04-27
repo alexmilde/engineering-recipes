@@ -13,10 +13,10 @@ builder.prismaObject("customer", {
 
 builder.queryFields((t) => ({
   customers: t.prismaField({
-    type: ["customer"], // Keep your object name lowercase if your table is
+    type: ["customer"],
     args: {
       email: t.arg({
-        type: "String", // Use the lowercase type here
+        type: "String",
         required: false,
       }),
     },
